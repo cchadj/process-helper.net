@@ -8,16 +8,18 @@ public static class Program
     static int Main(string[] args)
     {
         Console.WriteLine("Executing process");
+        
+        // Change these to test with other applications
         var processPath = @"..\..\..\testprocess\bin\Debug\testprocess.exe";
         var pythonScriptPath = @"..\..\simple.py";
-        
         var arguments = new[] {"-f", "filename"};
+        
+        
+        #region ProcessExecutor static methods testing
         StreamReader stdout;
         StreamReader stderr;
         StreamReader outReader;
         
-        #region ProcessExecutor static methods testing
-
         Console.WriteLine("========= Simple execution ============= (No output in this console) ");
         ProcessExecutor.ExecuteProcess(processPath, true, arguments);
 
