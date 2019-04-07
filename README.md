@@ -3,7 +3,7 @@ A convenient and expandable library for launching other applications and process
 
 # Table of Contents
 
-1. [Usage examples](#Usage examples)
+1. [Usage examples](#usage-examples)
 2. [Using the test project](#Using the test project)
 3. [Build using Visual Studio(VS) or Rider.](#Using the test project)
 # Usage examples
