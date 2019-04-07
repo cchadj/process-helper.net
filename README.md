@@ -50,3 +50,10 @@ void ExampleWithStreamRedirection()
 ```
 
 More examples in ProcessExecutorTester
+
+
+# To build using VS2017.
+1) Open sln
+2) Build ProcessExecutor poject
+3) Get dll from bin/Debug (or release)
+4) Add dll as reference from your projects
