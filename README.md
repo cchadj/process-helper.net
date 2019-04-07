@@ -4,8 +4,8 @@ A convenient and expandable library for launching other applications and process
 # Table of Contents
 
 1. [Usage examples](#usage-examples)
-2. [Using the test project](#Using the test project)
-3. [Build using Visual Studio(VS) or Rider.](#Using the test project)
+2. [Using the test project](#using-the-test-project)
+3. [Build using Visual Studio(VS) or Rider.](#build-using-visual-studio-or-Rider)
 # Usage examples
 ## ProcessExecutor ( Execute any application easily )
 ```csharp
@@ -102,7 +102,7 @@ You can change
 ```
 to any values you like in order to test other application or other arguments.
 
-# To build using Visual Studio(VS) or Rider.
+# Build using Visual Studio(VS) or Rider
 1) Clone or download this repo
 2) Open ProcessExecutor.sln (in VS or Rider)
 3) Right click ProcessExecutor (Solution Explorer) -> build (VS) or Build Selected Projects (in Rider)
