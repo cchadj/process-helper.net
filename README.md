@@ -4,8 +4,8 @@ A convenient and expandable library for launching other applications and process
 # Table of Contents
 
 * [Usage examples](#usage-examples)
- * [Execute any application easily] (#execute-any-python-script-easily)
- * [Execute any application easily] (#execute-any-python-script-easily)
+ * [Execute any application easily](#execute-any-python-script-easily)
+ * [Execute any application easily](#execute-any-python-script-easily)
 * [Using the test project](#using-the-test-project)
 * [Build using Visual Studio(VS) or Rider.](#build-using-visual-studio-or-Rider)
 # Usage examples
