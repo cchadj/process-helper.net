@@ -90,7 +90,7 @@ PythonExecutor assumes that python is in your PATH. To use a specific python exe
 ` pythonExecutor.PythonExecutablePath = "path/to/python/python.exe`
 
 # Using the test project
-ProcessExecutorTester project provides all the library capabilities. 
+ProcessExecutorTester project demonstrates all the library capabilities. 
 
 *To build any project right click on project in sollution explorer -> build (in Visual Sutdio) or Build Selected Projects (in Rider)*  
 To run the test:
