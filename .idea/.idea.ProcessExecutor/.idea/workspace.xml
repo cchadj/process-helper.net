@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="97ed41b0-ae86-415a-9050-fad278b271fa" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ProcessExecutor/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ProcessExecutor/.idea/indexLayout.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ProcessExecutor/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.ProcessExecutor/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProcessExecutor.sln" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProcessExecutor.sln.DotSettings.user" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.csproj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProcessExecutor/Properties/AssemblyInfo.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-3470">
+              <caret line="108" column="59" selection-start-line="108" selection-start-column="56" selection-end-line="108" selection-end-column="59" />
+              <folding>
+                <marker date="1554644888836" expanded="true" signature="6:75" ph="..." />
+                <marker date="1554644888836" expanded="true" signature="99:20085" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="106:3688" ph="/// This class should aid in executing processes and handling output of those processes with redirection modes. ... " />
+                <marker date="1554644888836" expanded="true" signature="3722:20083" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="3773:4064" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="4666:4731" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="4765:4819" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="4873:8427" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="5025:8394" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="8437:8749" ph="/// Execute process with redirecting output. ... " />
+                <marker date="1554644888836" expanded="true" signature="8978:9301" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="9311:9696" ph="/// Execute process with redirecting only one stream. ... " />
+                <marker date="1554644888836" expanded="true" signature="9930:10705" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="10715:10945" ph="/// Execute a process without capturing output ... " />
+                <marker date="1554644888836" expanded="true" signature="11063:11462" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="11697:12114" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="12124:12815" ph="/// Can only have stdout stream and stderr handler or ... " />
+                <marker date="1554644888836" expanded="true" signature="13103:13905" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="14365:17194" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="14432:14784" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="14842:15186" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="15272:15342" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="15554:16053" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="15621:16039" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="16896:17161" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="17364:19136" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="17435:19126" ph="{...}" />
+                <marker date="1554644888836" expanded="true" signature="19355:20077" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="307">
+              <caret line="158" column="31" lean-forward="true" selection-start-line="158" selection-start-column="31" selection-end-line="158" selection-end-column="31" />
+              <folding>
+                <marker date="1554645506652" expanded="true" signature="6:94" ph="..." />
+                <marker date="1554645506652" expanded="true" signature="123:7244" ph="{...}" />
+                <marker date="1554645506652" expanded="true" signature="160:6749" ph="{...}" />
+                <marker date="1554645506652" expanded="false" signature="486:3613" ph="statics testing" />
+                <marker date="1554645506652" expanded="true" signature="3623:6724" ph="MyRegion" />
+                <marker date="1554645506652" expanded="true" signature="3849:4154" ph="{...}" />
+                <marker date="1554645506652" expanded="true" signature="3895:4030" ph="/* ReSharper disable once ConvertClosureToMethodGroup ... */" />
+                <marker date="1554645506652" expanded="true" signature="6828:6914" ph="{...}" />
+                <marker date="1554645506652" expanded="true" signature="6992:7078" ph="{...}" />
+                <marker date="1554645506652" expanded="true" signature="7158:7241" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/testprocess/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+              <folding>
+                <marker date="1554645271500" expanded="true" signature="6:32" ph="..." />
+                <marker date="1554645271500" expanded="true" signature="55:441" ph="{...}" />
+                <marker date="1554645271500" expanded="true" signature="82:439" ph="{...}" />
+                <marker date="1554645271500" expanded="true" signature="134:433" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>switch</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Chadjiminas Chrysostomos" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/testprocess/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/988FA076-10C9-4365-AE6D-295A6AA379FE/30/2b8b0d83/Process.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/ProcessExecutor/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A23620C-45EB-41F2-B48D-9612A57926F8/a7/78ba3ca5/Console.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ProcessExecutor/Class1.cs" />
+        <option value="$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs" />
+        <option value="$PROJECT_DIR$/testprocess/Program.cs" />
+        <option value="$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/Program.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="444" />
+    <option name="y" value="-13" />
+    <option name="width" value="854" />
+    <option name="height" value="1017" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ProcessExecutor" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ProcessExecutor" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ProcessExecutor" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ProcessExecutor" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="ProcessExecutorTester" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="ProcessExecutor" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="testprocess" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="AssemblyExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/ProcessExecutorTester.csproj" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected=".NET Project.Default">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/bin/Debug/ProcessExecutorTester.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/ProcessExecutorTester.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testprocess" type="DotNetProject" factoryName=".NET Project" temporary="true">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/testprocess/bin/Debug/testprocess.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/testprocess/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/testprocess/testprocess.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.6.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue=".NET Project.testprocess" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="97ed41b0-ae86-415a-9050-fad278b271fa" name="Default Changelist" comment="" />
+      <created>1554625926556</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1554625926556</updated>
+      <workItem from="1554625928134" duration="17671000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17671000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
+    <layout>
+      <window_info id="Favorites" side_tool="true" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info active="true" anchor="bottom" id="Version Control" visible="true" weight="0.32922733" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32922733" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" />
+      <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Build" weight="0.32922733" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5229563" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="right" id="Database" />
+      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Init Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Init Commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/988FA076-10C9-4365-AE6D-295A6AA379FE/30/2b8b0d83/Process.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1103">
+          <caret line="2344" column="10" selection-start-line="2344" selection-start-column="10" selection-end-line="2344" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4A23620C-45EB-41F2-B48D-9612A57926F8/a7/78ba3ca5/Console.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5142">
+          <caret line="1678" column="6" selection-start-line="1678" selection-start-column="6" selection-end-line="1678" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3470">
+          <caret line="108" column="59" selection-start-line="108" selection-start-column="56" selection-end-line="108" selection-end-column="59" />
+          <folding>
+            <marker date="1554644888836" expanded="true" signature="6:75" ph="..." />
+            <marker date="1554644888836" expanded="true" signature="99:20085" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="106:3688" ph="/// This class should aid in executing processes and handling output of those processes with redirection modes. ... " />
+            <marker date="1554644888836" expanded="true" signature="3722:20083" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="3773:4064" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="4666:4731" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="4765:4819" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="4873:8427" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="5025:8394" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="8437:8749" ph="/// Execute process with redirecting output. ... " />
+            <marker date="1554644888836" expanded="true" signature="8978:9301" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="9311:9696" ph="/// Execute process with redirecting only one stream. ... " />
+            <marker date="1554644888836" expanded="true" signature="9930:10705" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="10715:10945" ph="/// Execute a process without capturing output ... " />
+            <marker date="1554644888836" expanded="true" signature="11063:11462" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="11697:12114" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="12124:12815" ph="/// Can only have stdout stream and stderr handler or ... " />
+            <marker date="1554644888836" expanded="true" signature="13103:13905" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="14365:17194" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="14432:14784" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="14842:15186" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="15272:15342" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="15554:16053" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="15621:16039" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="16896:17161" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="17364:19136" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="17435:19126" ph="{...}" />
+            <marker date="1554644888836" expanded="true" signature="19355:20077" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testprocess/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="5" lean-forward="true" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          <folding>
+            <marker date="1554645271500" expanded="true" signature="6:32" ph="..." />
+            <marker date="1554645271500" expanded="true" signature="55:441" ph="{...}" />
+            <marker date="1554645271500" expanded="true" signature="82:439" ph="{...}" />
+            <marker date="1554645271500" expanded="true" signature="134:433" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="158" column="31" lean-forward="true" selection-start-line="158" selection-start-column="31" selection-end-line="158" selection-end-column="31" />
+          <folding>
+            <marker date="1554645506652" expanded="true" signature="6:94" ph="..." />
+            <marker date="1554645506652" expanded="true" signature="123:7244" ph="{...}" />
+            <marker date="1554645506652" expanded="true" signature="160:6749" ph="{...}" />
+            <marker date="1554645506652" expanded="false" signature="486:3613" ph="statics testing" />
+            <marker date="1554645506652" expanded="true" signature="3623:6724" ph="MyRegion" />
+            <marker date="1554645506652" expanded="true" signature="3849:4154" ph="{...}" />
+            <marker date="1554645506652" expanded="true" signature="3895:4030" ph="/* ReSharper disable once ConvertClosureToMethodGroup ... */" />
+            <marker date="1554645506652" expanded="true" signature="6828:6914" ph="{...}" />
+            <marker date="1554645506652" expanded="true" signature="6992:7078" ph="{...}" />
+            <marker date="1554645506652" expanded="true" signature="7158:7241" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

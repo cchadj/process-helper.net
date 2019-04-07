@@ -1,0 +1,5 @@
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\testprocess\bin\Debug\testprocess.exe
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\testprocess\bin\Debug\testprocess.pdb
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\testprocess\obj\Debug\testprocess.csprojResolveAssemblyReference.cache
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\testprocess\obj\Debug\testprocess.exe
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\testprocess\obj\Debug\testprocess.pdb
