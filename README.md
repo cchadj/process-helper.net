@@ -104,4 +104,4 @@ to any values you like in order to test other application or other arguments.
 4) dll now resides in <clone-directory>\process-helper.net\ProcessExecutor\bin\Debug
 6) Add dll as reference in your projects  
   
-*You can also build as release *
+*You can also build as release*
