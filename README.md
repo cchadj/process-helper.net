@@ -4,10 +4,13 @@ A convenient and expandable library for launching other applications and process
 # Table of Contents
 
 1. [Usage examples](#usage-examples)
+ 1.1 [Execute any application easily] (#execute-any-application-easily)
+ 1.2 [Execute any application easily] (#execute-any-python-script-easily)
 2. [Using the test project](#using-the-test-project)
 3. [Build using Visual Studio(VS) or Rider.](#build-using-visual-studio-or-Rider)
 # Usage examples
-## ProcessExecutor ( Execute any application easily )
+## Execute any application easily
+#### Using ProcessExecutor 
 ```csharp
 Using Tomis.Utilities;
 
@@ -55,8 +58,8 @@ void ExampleWithStreamRedirection()
 }
 ```
 
-## PythonExecutor ( Execute any python script easily )
-
+## Execute any python script easily
+#### Using PythonExecutor 
 Just like ProcessExecutor but use python scripts instead.
 
 ```csharp
