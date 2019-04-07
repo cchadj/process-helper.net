@@ -22,6 +22,7 @@ void SimpleExample()
         var executor = new ProcessExecutor(processPath)
         {
             WaitForExit = true,
+            Args = arguments
         };
         executor.Execute();
 }
@@ -31,6 +32,7 @@ void ExampleWithHandlers()
         var executor = new ProcessExecutor(processPath)
         {
             WaitForExit = true,
+            Args = arguments
             StdoutHandler = (sender, e) => { Console.WriteLine(e.Data);},
             StderrHandler = StdErrHandler
         };
