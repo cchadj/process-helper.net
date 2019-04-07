@@ -102,7 +102,7 @@ You can change
 ```
 to any values you like in order to test other application or other arguments.
 
-# Build using Visual Studio(VS) or Rider
+# Build using Visual Studio or Rider
 1) Clone or download this repo
 2) Open ProcessExecutor.sln (in VS or Rider)
 3) Right click ProcessExecutor (Solution Explorer) -> build (VS) or Build Selected Projects (in Rider)
