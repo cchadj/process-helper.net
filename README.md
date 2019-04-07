@@ -81,7 +81,9 @@ PythonExecutor assumes that python is in your PATH. To use a specific python exe
 ` pythonExecutor.PythonExecutablePath = "path/to/python/python.exe`
 
 # Using the test project
-ProcessExecutorTester project provides all the library capabilities. To run the test.
+ProcessExecutorTester project provides all the library capabilities. 
+
+To run the test:
 1) Build testprocess project. (This project create a small executable to run from ProcessExecutorTester)
 2) Build ProcessExecutor. (This creates the dll to use ProcessExecutor)
 3) Build and run ProcessExecutorTester
