@@ -103,3 +103,5 @@ to any values you like in order to test other application or other arguments.
 3) Right click ProcessExecutor (Solution Explorer) -> build (VS) or Build Selected Projects (in Rider)
 4) dll now resides in <clone-directory>\process-helper.net\ProcessExecutor\bin\Debug
 6) Add dll as reference in your projects
+
+* You can also build as release *
