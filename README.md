@@ -15,7 +15,7 @@ Using Tomis.Utilities;
 
 
 string processPath = @"path\to\process";
-string[] arguments = new[] {"-r", "argument"};
+string[] arguments = new[] {"--the-answer", "42"};
 
 void SimpleExample()
 { 
@@ -67,7 +67,7 @@ Just like ProcessExecutor but use python scripts instead.
 Using Tomis.Utilities;
 
 string scriptPath = @"path\to\script.py";
-string[] arguments = new[] {"-r", "argument"};
+string[] arguments = new[] {"--radious", "0.15"};
 
 void SimpleExample()
 { 
