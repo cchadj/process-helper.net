@@ -1,6 +1,11 @@
 # process-helper.net
-A convenient and expandable library for launching other applications and processes from C# easily
+A convenient and expandable library for launching other applications and processes inside of C# easily
 
+# Table of Contents
+
+1. [Usage examples](#Usage examples)
+2. [Using the test project](#Using the test project)
+3. [Build using Visual Studio(VS) or Rider.](#Using the test project)
 # Usage examples
 ## ProcessExecutor ( Execute any application easily )
 ```csharp
