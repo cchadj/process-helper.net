@@ -56,9 +56,14 @@ namespace Tomis.Utils
     ///     </description>
     /// </item>
     /// </list>
-    /// 
+    /// <para/>
+    /// <remarks>
+    ///  If the executable exists then it is executed. If not then the executable in PATH is executed.
+    ///  It no such executable is found it fails.
+    /// </remarks>
     /// 
     /// </summary>
+    ///
     /// <para/><para/>
     ///
     /// 
@@ -101,7 +106,7 @@ namespace Tomis.Utils
         }
 
         public string ExecutablePath { get; set; }
-        public string[] Args { get; set; } = new string[0];
+        public virtual string[] Args { get; set; } = new string[0];
         public RedirectionMode Mode { get; set; } = RedirectionMode.None;
         public bool WaitForExit { get; set; } = false;
         public bool Verbose { get; set; }
@@ -117,12 +122,12 @@ namespace Tomis.Utils
             ExecutablePath = executablePath;
         }
 
-        public Process Execute()
+        public virtual Process Execute()
         {
-            return Execute(Mode);
+            return Execute(Mode, Args);
         }
 
-        public Process Execute(RedirectionMode mode)
+        protected virtual Process Execute(RedirectionMode mode, params string[] args)
         {
             Process p = null;
             StreamReader stdoutTempReader;
@@ -130,7 +135,7 @@ namespace Tomis.Utils
             switch (Mode)
             {
                 case RedirectionMode.None:
-                    p = ExecuteProcess(ExecutablePath, WaitForExit, Args);
+                    p = ExecuteProcess(ExecutablePath, WaitForExit, args);
                     break;
                 case RedirectionMode.UseHandlers:
                     if (StdoutHandler == null || StderrHandler == null)
@@ -138,10 +143,10 @@ namespace Tomis.Utils
                             "With mode UseHandlers, both handlers should be assigned! \n "
                             + (StdoutHandler == null ? "StdoutHandler is not assigned\n" : "")
                             + (StderrHandler == null ? "StdoutErrHandler is not assigned\n" : ""));
-                    p = ExecuteProcess(ExecutablePath, StdoutHandler, StderrHandler, WaitForExit, Args);
+                    p = ExecuteProcess(ExecutablePath, StdoutHandler, StderrHandler, WaitForExit, args);
                     break;
                 case RedirectionMode.RedirectStreams:
-                    p = ExecuteProcess(ExecutablePath, out stdoutTempReader, out stderrTempReader, WaitForExit, Args);
+                    p = ExecuteProcess(ExecutablePath, out stdoutTempReader, out stderrTempReader, WaitForExit, args);
                     StdoutReader = stdoutTempReader;
                     StderrReader = stderrTempReader;
                     break;
@@ -149,35 +154,35 @@ namespace Tomis.Utils
                     if (StderrHandler == null)
                         throw new InvalidOperationException(
                             "With mode StdoutStreamWithStderrHandler, StdErrHandler should be assigned! \n");
-                    p = ExecuteProcess(ExecutablePath, true, out stdoutTempReader, StderrHandler, WaitForExit, Args);
+                    p = ExecuteProcess(ExecutablePath, true, out stdoutTempReader, StderrHandler, WaitForExit, args);
                     StdoutReader = stdoutTempReader;
                     break;
                 case RedirectionMode.RedirectStderrWithStdoutHandler:
                     if (StderrHandler == null)
                         throw new InvalidOperationException(
                             "With mode StderrStreamWithStdoutHandler, StdoutHandler should be assigned! \n");
-                    p = ExecuteProcess(ExecutablePath, false, out stderrTempReader, StdoutHandler, WaitForExit, Args);
+                    p = ExecuteProcess(ExecutablePath, false, out stderrTempReader, StdoutHandler, WaitForExit, args);
                     StderrReader = stderrTempReader;
                     break;
                 case RedirectionMode.RedirectStdout:
-                    p = ExecuteProcess(ExecutablePath, true, out stdoutTempReader, WaitForExit, Args);
+                    p = ExecuteProcess(ExecutablePath, true, out stdoutTempReader, WaitForExit, args);
                     StdoutReader = stdoutTempReader;
                     break;
                 case RedirectionMode.RedirectStderr:
-                    p = ExecuteProcess(ExecutablePath, false, out stderrTempReader, WaitForExit, Args);
+                    p = ExecuteProcess(ExecutablePath, false, out stderrTempReader, WaitForExit, args);
                     StderrReader = stderrTempReader;
                     break;
                 case RedirectionMode.StdoutHandler:
                     if (StdoutHandler == null)
                         throw new InvalidOperationException(
                             "With mode StdoutHandler, StdoutHandler should be assigned! \n");
-                    p = ExecuteProcess(ExecutablePath, true,  StdoutHandler, WaitForExit, Args);
+                    p = ExecuteProcess(ExecutablePath, true,  StdoutHandler, WaitForExit, args);
                     break;
                 case RedirectionMode.StderrHandler:
                     if (StderrHandler == null)
                         throw new InvalidOperationException(
                             "With mode StderrHandler, StderrHandler should be assigned! \n");
-                    p = ExecuteProcess(ExecutablePath, false,  StderrHandler, WaitForExit, Args);
+                    p = ExecuteProcess(ExecutablePath, false,  StderrHandler, WaitForExit, args);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -346,6 +351,21 @@ namespace Tomis.Utils
                     args);
         }
 
+        /// <summary>
+        /// The most complete execute process other overloads are based on.
+        /// </summary>
+        /// <param name="pathToExecutable"></param>
+        /// <param name="redirectStdOut"></param>
+        /// <param name="redirectStdErr"></param>
+        /// <param name="stdout"></param>
+        /// <param name="stderr"></param>
+        /// <param name="stdoutHandler"></param>
+        /// <param name="stderrHandler"></param>
+        /// <param name="exitHandler"></param>
+        /// <param name="waitForExit"></param>
+        /// <param name="args"></param>
+        /// <returns></returns>
+        /// <exception cref="InvalidOperationException"></exception>
         private static Process ExecuteProcess(
             string pathToExecutable,
             bool redirectStdOut,
@@ -383,6 +403,12 @@ namespace Tomis.Utils
 
             var noRedirection = !redirectStdOut && !redirectStdErr
                                                 && stdoutHandler == null && stderrHandler == null;
+            Console.WriteLine(Path.GetFullPath(pathToExecutable));
+
+            if (File.Exists(pathToExecutable))
+            {
+                pathToExecutable = Path.GetFullPath(pathToExecutable);
+            }
             var p = new Process
             {
                 StartInfo = new ProcessStartInfo

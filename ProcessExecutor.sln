@@ -2,9 +2,9 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessExecutor", "ProcessExecutor\ProcessExecutor.csproj", "{988EED54-D7A9-4F07-B174-11609D694DB5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessExecutorTester", "..\ProcessExecutorTester\ProcessExecutorTester\ProcessExecutorTester.csproj", "{3DC25D43-6DDF-4C62-896A-84E69F0EA15F}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "testprocess", "testprocess\testprocess.csproj", "{217F1347-6187-4C11-8EE0-9F1059E15A48}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProcessExecutorTester", "ProcessExecutorTester\ProcessExecutorTester.csproj", "{21BC6A03-170D-4B4A-BB8E-755457A58086}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -16,13 +16,13 @@ Global
 		{988EED54-D7A9-4F07-B174-11609D694DB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{988EED54-D7A9-4F07-B174-11609D694DB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{988EED54-D7A9-4F07-B174-11609D694DB5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3DC25D43-6DDF-4C62-896A-84E69F0EA15F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3DC25D43-6DDF-4C62-896A-84E69F0EA15F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3DC25D43-6DDF-4C62-896A-84E69F0EA15F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3DC25D43-6DDF-4C62-896A-84E69F0EA15F}.Release|Any CPU.Build.0 = Release|Any CPU
 		{217F1347-6187-4C11-8EE0-9F1059E15A48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{217F1347-6187-4C11-8EE0-9F1059E15A48}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{217F1347-6187-4C11-8EE0-9F1059E15A48}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{217F1347-6187-4C11-8EE0-9F1059E15A48}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21BC6A03-170D-4B4A-BB8E-755457A58086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21BC6A03-170D-4B4A-BB8E-755457A58086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21BC6A03-170D-4B4A-BB8E-755457A58086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21BC6A03-170D-4B4A-BB8E-755457A58086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

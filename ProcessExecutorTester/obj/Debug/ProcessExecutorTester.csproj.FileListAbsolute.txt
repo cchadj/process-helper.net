@@ -1,0 +1,7 @@
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\ProcessExecutorTester\bin\Debug\ProcessExecutorTester.exe
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\ProcessExecutorTester\bin\Debug\ProcessExecutorTester.pdb
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\ProcessExecutorTester\bin\Debug\ProcessExecutor.dll
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\ProcessExecutorTester\bin\Debug\ProcessExecutor.pdb
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\ProcessExecutorTester\obj\Debug\ProcessExecutorTester.csprojResolveAssemblyReference.cache
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\ProcessExecutorTester\obj\Debug\ProcessExecutorTester.exe
+C:\Users\VR_Lab\RiderProjects\ProcessExecutor\ProcessExecutorTester\obj\Debug\ProcessExecutorTester.pdb
