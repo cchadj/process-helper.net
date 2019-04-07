@@ -3,11 +3,11 @@ A convenient and expandable library for launching other applications and process
 
 # Table of Contents
 
-1. [Usage examples](#usage-examples)
- 1.1 [Execute any application easily] (#execute-any-application-easily)
- 1.2 [Execute any application easily] (#execute-any-python-script-easily)
-2. [Using the test project](#using-the-test-project)
-3. [Build using Visual Studio(VS) or Rider.](#build-using-visual-studio-or-Rider)
+* [Usage examples](#usage-examples)
+ * [Execute any application easily] (#execute-any-application-easily)
+ * [Execute any application easily] (#execute-any-python-script-easily)
+* [Using the test project](#using-the-test-project)
+* [Build using Visual Studio(VS) or Rider.](#build-using-visual-studio-or-Rider)
 # Usage examples
 ## Execute any application easily
 #### Using ProcessExecutor 
