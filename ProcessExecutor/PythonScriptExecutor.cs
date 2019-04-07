@@ -24,7 +24,7 @@ namespace Tomis.Utils
         
         public string PythonScriptPath { get; set; }
         
-        public PythonScriptExecutor(string pythonScriptPath) : base("python.exe")
+        public PythonScriptExecutor(string pythonScriptPath) : base("python")
         {
             PythonScriptPath = pythonScriptPath;
         }
