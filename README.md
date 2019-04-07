@@ -83,10 +83,11 @@ PythonExecutor assumes that python is in your PATH. To use a specific python exe
 # Using the test project
 ProcessExecutorTester project provides all the library capabilities. 
 
+*To build any project right click on project in sollution explorer -> build (in Visual Sutdio) or Build Selected Projects (in Rider)*
 To run the test:
-1) Build testprocess project. (This project create a small executable to run from ProcessExecutorTester)
-2) Build ProcessExecutor. (This creates the dll to use ProcessExecutor)
-3) Build and run ProcessExecutorTester
+1) Build testprocess project. (This project creates a small executable to run from ProcessExecutorTester)
+2) Build ProcessExecutor. (This creates the dll in order to use ProcessExecutor from the tester )
+3) Build and run ProcessExecutorTester.
 
 You can change 
 ```csharp
@@ -96,8 +97,9 @@ You can change
 ```
 to any values you like in order to test other application or other arguments.
 
-# To build using Rider.
-1) Open sln
-2) Build ProcessExecutor poject
-3) Get dll from bin/Debug (or release)
-4) Add dll as reference in your projects
+# To build using Visual Studio(VS) or Rider.
+1) Clone or download this repo
+2) Open ProcessExecutor.sln (in VS or Rider)
+3) Right click ProcessExecutor (Solution Explorer) -> build (VS) or Build Selected Projects (in Rider)
+4) dll now resides in <clone-directory>\process-helper.net\ProcessExecutor\bin\Debug
+6) Add dll as reference in your projects
