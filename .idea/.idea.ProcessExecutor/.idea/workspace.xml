@@ -3,7 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="97ed41b0-ae86-415a-9050-fad278b271fa" name="Default Changelist" comment="Created PythonScriptExecutor to execute python scripts easily. Added ProcessExecutorTester that shows all the ways the library can be used.">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProcessExecutor/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProcessExecutor/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProcessExecutor/PythonScriptExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessExecutor/PythonScriptExecutor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessExecutor/bin/Debug/ProcessExecutor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessExecutor/bin/Debug/ProcessExecutor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessExecutor/bin/Debug/ProcessExecutor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessExecutor/bin/Debug/ProcessExecutor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessExecutor/obj/Debug/ProcessExecutor.dll" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessExecutor/obj/Debug/ProcessExecutor.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessExecutor/obj/Debug/ProcessExecutor.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessExecutor/obj/Debug/ProcessExecutor.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProcessExecutorTester/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ProcessExecutorTester/Program.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,43 +17,43 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1487">
-              <caret line="63" selection-start-line="63" selection-end-line="63" />
+            <state relative-caret-position="-5747">
+              <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
               <folding>
-                <marker date="1554652008991" expanded="true" signature="6:75" ph="..." />
-                <marker date="1554652008991" expanded="true" signature="99:21249" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="106:3893" ph="/// This class should aid in executing processes and handling output of those processes with redirection modes. ... " />
-                <marker date="1554652008991" expanded="true" signature="3927:21247" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="3978:4269" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="4879:4944" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="4986:5046" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="5133:8687" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="5285:8654" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="8697:9009" ph="/// Execute process with redirecting output. ... " />
-                <marker date="1554652008991" expanded="true" signature="9238:9561" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="9571:9956" ph="/// Execute process with redirecting only one stream. ... " />
-                <marker date="1554652008991" expanded="true" signature="10190:10965" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="10975:11205" ph="/// Execute a process without capturing output ... " />
-                <marker date="1554652008991" expanded="true" signature="11323:11722" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="11957:12374" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="12384:13075" ph="/// Can only have stdout stream and stderr handler or ... " />
-                <marker date="1554652008991" expanded="true" signature="13363:14165" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="14175:14856" ph="///  ... " />
-                <marker date="1554652008991" expanded="true" signature="15315:18358" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="15382:15734" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="15792:16136" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="16222:16292" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="16574:16673" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="16718:17217" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="16785:17203" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="18060:18325" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="18528:20300" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="18599:20290" ph="{...}" />
-                <marker date="1554652008991" expanded="true" signature="20519:21241" ph="{...}" />
+                <marker date="1554741030736" expanded="false" signature="6:75" ph="..." />
+                <marker date="1554741030736" expanded="true" signature="99:21817" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="106:3893" ph="/// This class should aid in executing processes and handling output of those processes with redirection modes. ... " />
+                <marker date="1554741030736" expanded="true" signature="3927:21815" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="3978:4269" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="4942:5007" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="5049:5109" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="5196:8867" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="5348:8834" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="8877:9236" ph="/// Execute process with redirecting output. ... " />
+                <marker date="1554741030736" expanded="true" signature="9490:9820" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="9830:10262" ph="/// Execute process with redirecting only one stream. ... " />
+                <marker date="1554741030736" expanded="true" signature="10521:11310" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="11320:11550" ph="/// Execute a process without capturing output ... " />
+                <marker date="1554741030736" expanded="true" signature="11694:12100" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="12380:12804" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="12814:13552" ph="/// Can only have stdout stream and stderr handler or ... " />
+                <marker date="1554741030736" expanded="true" signature="13878:14694" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="14704:15385" ph="/// The most complete execute process other overloads are based on. ... " />
+                <marker date="1554741030736" expanded="true" signature="15844:18887" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="15911:16263" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="16321:16665" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="16751:16821" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="17103:17202" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="17247:17746" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="17314:17732" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="18589:18854" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="19057:20829" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="19128:20819" ph="{...}" />
+                <marker date="1554741030736" expanded="true" signature="21073:21809" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -66,19 +71,19 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/988FA076-10C9-4365-AE6D-295A6AA379FE/30/2b8b0d83/Process.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-325">
+            <state relative-caret-position="29340">
               <caret line="1968" column="8" selection-start-line="1968" selection-start-column="8" selection-end-line="1968" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ProcessExecutor/PythonScriptExecutor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
+            <state relative-caret-position="285">
+              <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
               <folding>
-                <marker date="1554654095760" expanded="true" signature="6:59" ph="..." />
+                <marker date="1554654095760" expanded="false" signature="6:59" ph="..." />
                 <marker date="1554654095760" expanded="true" signature="82:1607" ph="{...}" />
                 <marker date="1554654095760" expanded="true" signature="89:997" ph="/// Provide a python script to execute. &lt;para/&gt; ... " />
                 <marker date="1554654095760" expanded="true" signature="1053:1605" ph="{...}" />
@@ -89,23 +94,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ProcessExecutorTester/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="49" />
+            <state relative-caret-position="236">
+              <caret line="189" column="91" selection-start-line="189" selection-start-column="91" selection-end-line="189" selection-end-column="91" />
               <folding>
-                <marker date="1554653826556" expanded="true" signature="6:75" ph="..." />
-                <marker date="1554653826556" expanded="true" signature="104:8444" ph="{...}" />
-                <marker date="1554653826556" expanded="true" signature="141:7949" ph="{...}" />
-                <marker date="1554653826556" expanded="false" signature="465:3682" ph="ProcessExecutor static methods testing" />
-                <marker date="1554653826556" expanded="true" signature="3692:6793" ph="ProcessExecutor as an instance testing" />
-                <marker date="1554653826556" expanded="true" signature="3918:4223" ph="{...}" />
-                <marker date="1554653826556" expanded="true" signature="3964:4099" ph="/* ReSharper disable once ConvertClosureToMethodGroup ... */" />
-                <marker date="1554653826556" expanded="true" signature="7516:7656" ph="{...}" />
-                <marker date="1554653826556" expanded="true" signature="8028:8114" ph="{...}" />
-                <marker date="1554653826556" expanded="true" signature="8192:8278" ph="{...}" />
-                <marker date="1554653826556" expanded="true" signature="8358:8441" ph="{...}" />
+                <marker date="1554741030763" expanded="false" signature="6:75" ph="..." />
+                <marker date="1554741030763" expanded="true" signature="104:8818" ph="{...}" />
+                <marker date="1554741030763" expanded="true" signature="141:8211" ph="{...}" />
+                <marker date="1554741030763" expanded="true" signature="465:3882" ph="ProcessExecutor static methods testing" />
+                <marker date="1554741030763" expanded="true" signature="3892:6962" ph="ProcessExecutor as an instance testing" />
+                <marker date="1554741030763" expanded="true" signature="4118:4462" ph="{...}" />
+                <marker date="1554741030763" expanded="true" signature="4164:4299" ph="/* ReSharper disable once ConvertClosureToMethodGroup ... */" />
+                <marker date="1554741030763" expanded="true" signature="7685:7918" ph="{...}" />
+                <marker date="1554741030763" expanded="true" signature="8290:8376" ph="{...}" />
+                <marker date="1554741030763" expanded="true" signature="8454:8540" ph="{...}" />
+                <marker date="1554741030763" expanded="true" signature="8620:8703" ph="{...}" />
+                <marker date="1554741030763" expanded="true" signature="8767:8816" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -117,7 +123,7 @@
             <state>
               <caret column="1" selection-start-column="1" selection-end-column="1" />
               <folding>
-                <marker date="1554645271500" expanded="true" signature="6:32" ph="..." />
+                <marker date="1554645271500" expanded="false" signature="6:32" ph="..." />
                 <marker date="1554645271500" expanded="true" signature="55:441" ph="{...}" />
                 <marker date="1554645271500" expanded="true" signature="82:439" ph="{...}" />
                 <marker date="1554645271500" expanded="true" signature="134:433" ph="{...}" />
@@ -134,6 +140,7 @@
       <find>execute</find>
       <find>Args</find>
       <find>exists</find>
+      <find>{</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -162,14 +169,14 @@
         <option value="$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/Program.cs" />
         <option value="$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs" />
         <option value="$PROJECT_DIR$/ProcessExecutorTester/simple.py" />
-        <option value="$PROJECT_DIR$/ProcessExecutorTester/Program.cs" />
         <option value="$PROJECT_DIR$/ProcessExecutor/PythonScriptExecutor.cs" />
+        <option value="$PROJECT_DIR$/ProcessExecutorTester/Program.cs" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="283" />
-    <option name="y" value="-8" />
+    <option name="x" value="278" />
+    <option name="y" value="354" />
     <option name="width" value="854" />
     <option name="height" value="1017" />
   </component>
@@ -190,17 +197,7 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="ProcessExecutor" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="ProcessExecutor" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="ProcessExecutor" type="24d0babc:SolutionExplorerModelNode" />
               <item name="ProcessExecutorTester" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="ProcessExecutor" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="testprocess" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -218,7 +215,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -304,12 +301,13 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1554625926556</updated>
-      <workItem from="1554625928134" duration="25527000" />
+      <workItem from="1554625928134" duration="27677000" />
+      <workItem from="1554740539317" duration="492000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25527000" />
+    <option name="totallyTimeSpent" value="28169000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -324,40 +322,40 @@
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
-      <window_info id="Image Layers" />
-      <window_info id="Capture Tool" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25305623" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="NuGet" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" weight="0.32922733" />
-      <window_info anchor="bottom" id="Unit Tests" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.32922733" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Performance Profiler" />
-      <window_info anchor="bottom" id="Build" weight="0.32922733" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5229563" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.5229563" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977604" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32922733" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Errors In Solution" />
-      <window_info anchor="right" id="Database" />
-      <window_info anchor="right" id="Unit Tests Coverage" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" weight="0.32922733" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32922733" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="15" weight="0.32922733" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -380,6 +378,20 @@
                 </list>
               </option>
             </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
           </value>
         </entry>
       </map>
@@ -407,16 +419,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testprocess/Program.cs">
+    <entry file="file://$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1" selection-start-column="1" selection-end-column="1" />
-          <folding>
-            <marker date="1554645271500" expanded="true" signature="6:32" ph="..." />
-            <marker date="1554645271500" expanded="true" signature="55:441" ph="{...}" />
-            <marker date="1554645271500" expanded="true" signature="82:439" ph="{...}" />
-            <marker date="1554645271500" expanded="true" signature="134:433" ph="{...}" />
-          </folding>
+        <state relative-caret-position="187">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -427,103 +433,97 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1487">
-          <caret line="63" selection-start-line="63" selection-end-line="63" />
-          <folding>
-            <marker date="1554652008991" expanded="true" signature="6:75" ph="..." />
-            <marker date="1554652008991" expanded="true" signature="99:21249" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="106:3893" ph="/// This class should aid in executing processes and handling output of those processes with redirection modes. ... " />
-            <marker date="1554652008991" expanded="true" signature="3927:21247" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="3978:4269" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="4879:4944" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="4986:5046" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="5133:8687" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="5285:8654" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="8697:9009" ph="/// Execute process with redirecting output. ... " />
-            <marker date="1554652008991" expanded="true" signature="9238:9561" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="9571:9956" ph="/// Execute process with redirecting only one stream. ... " />
-            <marker date="1554652008991" expanded="true" signature="10190:10965" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="10975:11205" ph="/// Execute a process without capturing output ... " />
-            <marker date="1554652008991" expanded="true" signature="11323:11722" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="11957:12374" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="12384:13075" ph="/// Can only have stdout stream and stderr handler or ... " />
-            <marker date="1554652008991" expanded="true" signature="13363:14165" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="14175:14856" ph="///  ... " />
-            <marker date="1554652008991" expanded="true" signature="15315:18358" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="15382:15734" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="15792:16136" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="16222:16292" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="16574:16673" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="16718:17217" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="16785:17203" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="18060:18325" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="18528:20300" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="18599:20290" ph="{...}" />
-            <marker date="1554652008991" expanded="true" signature="20519:21241" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/988FA076-10C9-4365-AE6D-295A6AA379FE/30/2b8b0d83/Process.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-325">
+        <state relative-caret-position="29340">
           <caret line="1968" column="8" selection-start-line="1968" selection-start-column="8" selection-end-line="1968" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ProcessExecutorTester/ProcessExecutorTester/Program.cs">
+    <entry file="file://$PROJECT_DIR$/ProcessExecutor/PythonScriptExecutor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        <state relative-caret-position="285">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="29" selection-end-line="35" selection-end-column="29" />
           <folding>
-            <marker date="1554650986185" expanded="true" signature="6:75" ph="..." />
-            <marker date="1554650986185" expanded="true" signature="104:8417" ph="{...}" />
-            <marker date="1554650986185" expanded="true" signature="141:7922" ph="{...}" />
-            <marker date="1554650986185" expanded="true" signature="476:3603" ph="ProcessExecutor static methods testing" />
-            <marker date="1554650986185" expanded="true" signature="3613:6714" ph="ProcessExecutor as an instance testing" />
-            <marker date="1554650986185" expanded="true" signature="3839:4144" ph="{...}" />
-            <marker date="1554650986185" expanded="true" signature="3885:4020" ph="/* ReSharper disable once ConvertClosureToMethodGroup ... */" />
-            <marker date="1554650986185" expanded="true" signature="7523:7633" ph="{...}" />
-            <marker date="1554650986185" expanded="true" signature="8001:8087" ph="{...}" />
-            <marker date="1554650986185" expanded="true" signature="8165:8251" ph="{...}" />
-            <marker date="1554650986185" expanded="true" signature="8331:8414" ph="{...}" />
+            <marker date="1554654095760" expanded="false" signature="6:59" ph="..." />
+            <marker date="1554654095760" expanded="true" signature="82:1607" ph="{...}" />
+            <marker date="1554654095760" expanded="true" signature="89:997" ph="/// Provide a python script to execute. &lt;para/&gt; ... " />
+            <marker date="1554654095760" expanded="true" signature="1053:1605" ph="{...}" />
+            <marker date="1554654095760" expanded="true" signature="1265:1334" ph="{...}" />
+            <marker date="1554654095760" expanded="true" signature="1422:1599" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ProcessExecutor/ProcessExecutor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5747">
+          <caret line="131" column="34" selection-start-line="131" selection-start-column="34" selection-end-line="131" selection-end-column="34" />
+          <folding>
+            <marker date="1554741030736" expanded="false" signature="6:75" ph="..." />
+            <marker date="1554741030736" expanded="true" signature="99:21817" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="106:3893" ph="/// This class should aid in executing processes and handling output of those processes with redirection modes. ... " />
+            <marker date="1554741030736" expanded="true" signature="3927:21815" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="3978:4269" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="4942:5007" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="5049:5109" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="5196:8867" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="5348:8834" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="8877:9236" ph="/// Execute process with redirecting output. ... " />
+            <marker date="1554741030736" expanded="true" signature="9490:9820" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="9830:10262" ph="/// Execute process with redirecting only one stream. ... " />
+            <marker date="1554741030736" expanded="true" signature="10521:11310" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="11320:11550" ph="/// Execute a process without capturing output ... " />
+            <marker date="1554741030736" expanded="true" signature="11694:12100" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="12380:12804" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="12814:13552" ph="/// Can only have stdout stream and stderr handler or ... " />
+            <marker date="1554741030736" expanded="true" signature="13878:14694" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="14704:15385" ph="/// The most complete execute process other overloads are based on. ... " />
+            <marker date="1554741030736" expanded="true" signature="15844:18887" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="15911:16263" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="16321:16665" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="16751:16821" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="17103:17202" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="17247:17746" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="17314:17732" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="18589:18854" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="19057:20829" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="19128:20819" ph="{...}" />
+            <marker date="1554741030736" expanded="true" signature="21073:21809" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testprocess/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+          <folding>
+            <marker date="1554645271500" expanded="false" signature="6:32" ph="..." />
+            <marker date="1554645271500" expanded="true" signature="55:441" ph="{...}" />
+            <marker date="1554645271500" expanded="true" signature="82:439" ph="{...}" />
+            <marker date="1554645271500" expanded="true" signature="134:433" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ProcessExecutorTester/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" selection-start-line="12" selection-end-line="14" selection-end-column="49" />
+        <state relative-caret-position="236">
+          <caret line="189" column="91" selection-start-line="189" selection-start-column="91" selection-end-line="189" selection-end-column="91" />
           <folding>
-            <marker date="1554653826556" expanded="true" signature="6:75" ph="..." />
-            <marker date="1554653826556" expanded="true" signature="104:8444" ph="{...}" />
-            <marker date="1554653826556" expanded="true" signature="141:7949" ph="{...}" />
-            <marker date="1554653826556" expanded="false" signature="465:3682" ph="ProcessExecutor static methods testing" />
-            <marker date="1554653826556" expanded="true" signature="3692:6793" ph="ProcessExecutor as an instance testing" />
-            <marker date="1554653826556" expanded="true" signature="3918:4223" ph="{...}" />
-            <marker date="1554653826556" expanded="true" signature="3964:4099" ph="/* ReSharper disable once ConvertClosureToMethodGroup ... */" />
-            <marker date="1554653826556" expanded="true" signature="7516:7656" ph="{...}" />
-            <marker date="1554653826556" expanded="true" signature="8028:8114" ph="{...}" />
-            <marker date="1554653826556" expanded="true" signature="8192:8278" ph="{...}" />
-            <marker date="1554653826556" expanded="true" signature="8358:8441" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ProcessExecutor/PythonScriptExecutor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="75" selection-start-line="26" selection-start-column="75" selection-end-line="26" selection-end-column="75" />
-          <folding>
-            <marker date="1554654095760" expanded="true" signature="6:59" ph="..." />
-            <marker date="1554654095760" expanded="true" signature="82:1607" ph="{...}" />
-            <marker date="1554654095760" expanded="true" signature="89:997" ph="/// Provide a python script to execute. &lt;para/&gt; ... " />
-            <marker date="1554654095760" expanded="true" signature="1053:1605" ph="{...}" />
-            <marker date="1554654095760" expanded="true" signature="1265:1334" ph="{...}" />
-            <marker date="1554654095760" expanded="true" signature="1422:1599" ph="{...}" />
+            <marker date="1554741030763" expanded="false" signature="6:75" ph="..." />
+            <marker date="1554741030763" expanded="true" signature="104:8818" ph="{...}" />
+            <marker date="1554741030763" expanded="true" signature="141:8211" ph="{...}" />
+            <marker date="1554741030763" expanded="true" signature="465:3882" ph="ProcessExecutor static methods testing" />
+            <marker date="1554741030763" expanded="true" signature="3892:6962" ph="ProcessExecutor as an instance testing" />
+            <marker date="1554741030763" expanded="true" signature="4118:4462" ph="{...}" />
+            <marker date="1554741030763" expanded="true" signature="4164:4299" ph="/* ReSharper disable once ConvertClosureToMethodGroup ... */" />
+            <marker date="1554741030763" expanded="true" signature="7685:7918" ph="{...}" />
+            <marker date="1554741030763" expanded="true" signature="8290:8376" ph="{...}" />
+            <marker date="1554741030763" expanded="true" signature="8454:8540" ph="{...}" />
+            <marker date="1554741030763" expanded="true" signature="8620:8703" ph="{...}" />
+            <marker date="1554741030763" expanded="true" signature="8767:8816" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -21,23 +21,23 @@ public static class Program
         StreamReader outReader;
         
         Console.WriteLine("========= Simple execution ============= (No output in this console) ");
-        ProcessExecutor.ExecuteProcess(processPath, true, arguments);
+        ProcessExecutor.ExecuteProcess(processPath, ExitHandler, true, arguments);
 
         
         Console.WriteLine("========= Capturing bot stdout and stderr =============");
-        var p = ProcessExecutor.ExecuteProcess(processPath, out stdout, out stderr, true, arguments);
+        var p = ProcessExecutor.ExecuteProcess(processPath, out stdout, out stderr, ExitHandler,true, arguments);
         Console.WriteLine("Captured stdout: \n" + stdout.ReadToEnd());
         Console.WriteLine("Captured stderr: \n" + stderr.ReadToEnd());
 
         
         Console.WriteLine("========= Capturing only stdout =============");
 
-        p = ProcessExecutor.ExecuteProcess(processPath, true, out outReader, true, arguments);
+        p = ProcessExecutor.ExecuteProcess(processPath, true, out outReader, ExitHandler, true, arguments);
         Console.WriteLine("Captured only stdout: \n" + outReader.ReadToEnd());
         
         
         Console.WriteLine("========= Capturing only stderr =============");
-        ProcessExecutor.ExecuteProcess(processPath, false, out outReader, true,arguments);
+        ProcessExecutor.ExecuteProcess(processPath, false, out outReader,ExitHandler, true,arguments);
         Console.WriteLine("Captured only stderr: \n" + outReader.ReadToEnd());
         
       
@@ -47,6 +47,7 @@ public static class Program
             processPath,
             (object sender, DataReceivedEventArgs e) => StdOutHandler(sender, e),
             StdErrHandler,
+            ExitHandler,
             true,
             arguments);
         
@@ -56,6 +57,7 @@ public static class Program
             processPath,
             (object sender, DataReceivedEventArgs e) => StdOutHandler(sender, e),
             StdErrHandler,
+            ExitHandler,
             true,
             arguments);
         
@@ -65,6 +67,7 @@ public static class Program
             processPath,
             true,
             OutHandler,
+            ExitHandler,
             true,
             arguments);
 
@@ -74,6 +77,7 @@ public static class Program
             processPath,
             false,
             OutHandler,
+            ExitHandler,
             true,
             arguments);
         
@@ -84,6 +88,7 @@ public static class Program
             true,
             out outReader,
             StdErrHandler,
+            ExitHandler,
             true,
             arguments);
         Console.WriteLine("Captured only stdout as a stream: \n" + outReader.ReadToEnd());
@@ -95,6 +100,7 @@ public static class Program
             false,
             out outReader,
             StdOutHandler,
+            ExitHandler,
             true,
             arguments);
         Console.WriteLine("Captured only stderr as a stream: \n" + outReader.ReadToEnd());
@@ -111,12 +117,12 @@ public static class Program
             // ReSharper disable once ConvertClosureToMethodGroup
             // Demonstrating how one can use lambda expression to assign handler.
             StdoutHandler = (sender, e) => { StdOutHandler(sender,e);},
-            StderrHandler = StdErrHandler
+            StderrHandler = StdErrHandler,
+            ExitHandler = ExitHandler
         };
 
 
         Console.WriteLine("========= Simple execution ============= (No output in this console) ");
-        ProcessExecutor.ExecuteProcess(processPath, true, arguments);
         executor.Execute();
         
         Console.WriteLine("========= Capturing both stdout and stderr =============");
@@ -180,7 +186,8 @@ public static class Program
         {
             Mode = ProcessExecutor.RedirectionMode.RedirectStreams,
             WaitForExit = true,
-            Args = arguments
+            Args = arguments,
+            ExitHandler = (sender, e) => Console.WriteLine("Python script execution ended")
         };
         
         pythonExecutor.Execute();
@@ -205,4 +212,8 @@ public static class Program
         Console.WriteLine($"OutHandler. Data received: \n<{e.Data}>");
     }
 
+    public static void ExitHandler(object sender, EventArgs e)
+    {
+        Console.WriteLine("Exited");
+    }
 }

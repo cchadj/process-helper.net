@@ -113,6 +113,8 @@ namespace Tomis.Utils
 
         public DataReceivedEventHandler StdoutHandler { get; set; }
         public DataReceivedEventHandler StderrHandler { get; set; }
+        
+        public EventHandler ExitHandler { get; set; }
 
         public StreamReader StdoutReader { get; private set; }
         public StreamReader StderrReader { get; private set; }
@@ -135,7 +137,7 @@ namespace Tomis.Utils
             switch (Mode)
             {
                 case RedirectionMode.None:
-                    p = ExecuteProcess(ExecutablePath, WaitForExit, args);
+                    p = ExecuteProcess(ExecutablePath, ExitHandler, WaitForExit, args);
                     break;
                 case RedirectionMode.UseHandlers:
                     if (StdoutHandler == null || StderrHandler == null)
@@ -143,10 +145,10 @@ namespace Tomis.Utils
                             "With mode UseHandlers, both handlers should be assigned! \n "
                             + (StdoutHandler == null ? "StdoutHandler is not assigned\n" : "")
                             + (StderrHandler == null ? "StdoutErrHandler is not assigned\n" : ""));
-                    p = ExecuteProcess(ExecutablePath, StdoutHandler, StderrHandler, WaitForExit, args);
+                    p = ExecuteProcess(ExecutablePath, StdoutHandler, StderrHandler, ExitHandler, WaitForExit, args);
                     break;
                 case RedirectionMode.RedirectStreams:
-                    p = ExecuteProcess(ExecutablePath, out stdoutTempReader, out stderrTempReader, WaitForExit, args);
+                    p = ExecuteProcess(ExecutablePath, out stdoutTempReader, out stderrTempReader, ExitHandler, WaitForExit, args);
                     StdoutReader = stdoutTempReader;
                     StderrReader = stderrTempReader;
                     break;
@@ -154,35 +156,35 @@ namespace Tomis.Utils
                     if (StderrHandler == null)
                         throw new InvalidOperationException(
                             "With mode StdoutStreamWithStderrHandler, StdErrHandler should be assigned! \n");
-                    p = ExecuteProcess(ExecutablePath, true, out stdoutTempReader, StderrHandler, WaitForExit, args);
+                    p = ExecuteProcess(ExecutablePath, true, out stdoutTempReader, StderrHandler, ExitHandler, WaitForExit, args);
                     StdoutReader = stdoutTempReader;
                     break;
                 case RedirectionMode.RedirectStderrWithStdoutHandler:
                     if (StderrHandler == null)
                         throw new InvalidOperationException(
                             "With mode StderrStreamWithStdoutHandler, StdoutHandler should be assigned! \n");
-                    p = ExecuteProcess(ExecutablePath, false, out stderrTempReader, StdoutHandler, WaitForExit, args);
+                    p = ExecuteProcess(ExecutablePath, false, out stderrTempReader, StdoutHandler, ExitHandler, WaitForExit, args);
                     StderrReader = stderrTempReader;
                     break;
                 case RedirectionMode.RedirectStdout:
-                    p = ExecuteProcess(ExecutablePath, true, out stdoutTempReader, WaitForExit, args);
+                    p = ExecuteProcess(ExecutablePath, true, out stdoutTempReader, ExitHandler, WaitForExit, args);
                     StdoutReader = stdoutTempReader;
                     break;
                 case RedirectionMode.RedirectStderr:
-                    p = ExecuteProcess(ExecutablePath, false, out stderrTempReader, WaitForExit, args);
+                    p = ExecuteProcess(ExecutablePath, false, out stderrTempReader, ExitHandler, WaitForExit, args);
                     StderrReader = stderrTempReader;
                     break;
                 case RedirectionMode.StdoutHandler:
                     if (StdoutHandler == null)
                         throw new InvalidOperationException(
                             "With mode StdoutHandler, StdoutHandler should be assigned! \n");
-                    p = ExecuteProcess(ExecutablePath, true,  StdoutHandler, WaitForExit, args);
+                    p = ExecuteProcess(ExecutablePath, true,  StdoutHandler, ExitHandler, WaitForExit, args);
                     break;
                 case RedirectionMode.StderrHandler:
                     if (StderrHandler == null)
                         throw new InvalidOperationException(
                             "With mode StderrHandler, StderrHandler should be assigned! \n");
-                    p = ExecuteProcess(ExecutablePath, false,  StderrHandler, WaitForExit, args);
+                    p = ExecuteProcess(ExecutablePath, false,  StderrHandler, ExitHandler, WaitForExit, args);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException();
@@ -197,12 +199,13 @@ namespace Tomis.Utils
         /// <param name="pathToExecutable"></param>
         /// <param name="stdout"></param>
         /// <param name="stderr"></param>
+        /// <param name="exitHandler"></param>
         /// <param name="waitForExit"></param>
         /// <param name="args"></param>
-        public static Process ExecuteProcess(
-            string pathToExecutable,
+        public static Process ExecuteProcess(string pathToExecutable,
             out StreamReader stdout,
             out StreamReader stderr,
+            EventHandler exitHandler,
             bool waitForExit = false,
             params string[] args)
         {
@@ -214,7 +217,7 @@ namespace Tomis.Utils
                 out stderr,
                 null,
                 null,
-                null,
+                exitHandler,
                 waitForExit,
                 args);
         }
@@ -225,12 +228,13 @@ namespace Tomis.Utils
         /// <param name="pathToExecutable"></param>
         /// <param name="redirectStdOut"></param>
         /// <param name="outStreamReader"> The streamReader for captured stdout or stderr</param>
+        /// <param name="exitHandler"></param>
         /// <param name="waitForExit"></param>
         /// <param name="args"></param>
-        public static Process ExecuteProcess(
-            string pathToExecutable,
+        public static Process ExecuteProcess(string pathToExecutable,
             bool redirectStdOut,
             out StreamReader outStreamReader,
+            EventHandler exitHandler,
             bool waitForExit = false,
             params string[] args)
         {
@@ -244,7 +248,7 @@ namespace Tomis.Utils
                     out _,
                     null,
                     null,
-                    null,
+                    exitHandler,
                     waitForExit,
                     args)
                 : ProcessExecutor.ExecuteProcess(
@@ -255,7 +259,7 @@ namespace Tomis.Utils
                     out outStreamReader,
                     null,
                     null,
-                    null,
+                    exitHandler,
                     waitForExit,
                     args);
         }
@@ -266,7 +270,7 @@ namespace Tomis.Utils
         /// <param name="pathToExecutable"></param>
         /// <param name="waitForExit"></param>
         /// <param name="args"></param>
-        public static Process ExecuteProcess(string pathToExecutable, bool waitForExit = false, params string[] args)
+        public static Process ExecuteProcess(string pathToExecutable, EventHandler exitHandler, bool waitForExit = false, params string[] args)
         {
             StreamReader _;
             return
@@ -278,7 +282,7 @@ namespace Tomis.Utils
                     out _,
                     null,
                     null,
-                    null,
+                    exitHandler,
                     waitForExit,
                     args);
         }
@@ -286,6 +290,7 @@ namespace Tomis.Utils
         public static Process ExecuteProcess(string pathToExecutable,
             DataReceivedEventHandler stdoutHandler,
             DataReceivedEventHandler stderrHandler,
+            EventHandler exitHandler = null,
             bool waitForExit = false, params string[] args)
         {
             StreamReader _;
@@ -298,7 +303,7 @@ namespace Tomis.Utils
                     out _,
                     stdoutHandler,
                     stderrHandler,
-                    null,
+                    exitHandler,
                     waitForExit,
                     args);
         }
@@ -315,6 +320,7 @@ namespace Tomis.Utils
         /// </param>
         /// <param name="outStreamReader"></param>
         /// <param name="handler"></param>
+        /// <param name="exitHandler"></param>
         /// <param name="waitForExit"></param>
         /// <param name="args"></param>
         /// <returns></returns>
@@ -322,6 +328,7 @@ namespace Tomis.Utils
             bool captureStdoutStreamAndUseErrHandler,
             out StreamReader outStreamReader,
             DataReceivedEventHandler handler,
+            EventHandler exitHandler,
             bool waitForExit = false,
             params string[] args)
         {
@@ -335,7 +342,7 @@ namespace Tomis.Utils
                     out _,
                     null,
                     handler,
-                    null,
+                    exitHandler,
                     waitForExit,
                     args)
                 : ProcessExecutor.ExecuteProcess(
@@ -346,7 +353,7 @@ namespace Tomis.Utils
                     out outStreamReader,
                     handler,
                     null,
-                    null,
+                    exitHandler,
                     waitForExit,
                     args);
         }
@@ -511,10 +518,10 @@ namespace Tomis.Utils
             }
         }
 
-        public static Process ExecuteProcess(
-            string pathToExecutable,
+        public static Process ExecuteProcess(string pathToExecutable,
             bool stdoutHandler,
             DataReceivedEventHandler handler,
+            EventHandler exitHandler,
             bool waitForExit,
             string[] args)
         {
@@ -528,7 +535,7 @@ namespace Tomis.Utils
                     out _,
                     handler,
                     null,
-                    null,
+                    exitHandler,
                     waitForExit,
                     args)
                 : ExecuteProcess(
@@ -539,7 +546,7 @@ namespace Tomis.Utils
                     out _,
                     null,
                     handler,
-                    null,
+                    exitHandler,
                     waitForExit,
                     args);
         }
